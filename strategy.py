@@ -1,3 +1,7 @@
+# Explaination:
+# Trong Product class, chúng ta sử dụng set_calculate_strategy() để thiết lập chiến lược tính giá.
+# Sau đó, chúng ta sử dụng calculate_price() để tính giá sản phẩm bằng cách sử dụng chiến lược tính giá được đặt trước đó.
+
 # Định nghĩa interface tính toán
 from abc import ABC, abstractmethod
 
