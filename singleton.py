@@ -13,7 +13,7 @@ class Singleton:
             Singleton()
         return Singleton.__instance
 
-   def __init__(self):
+    def __init__(self):
         Singleton.__instance = self
 
 # Sử dụng

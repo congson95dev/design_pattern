@@ -1,8 +1,13 @@
+# "Mọi con đường đều tiến tới thành Rome"
+
 # Explaination:
+# Được thiết kế dựa trên dependency inversion trong nguyên lý solid
+# Nên có thể hiểu pattern này như sau:
+# Không nên trực tiếp tạo instance mà nên sử dụng abstract/interface để giao tiếp giữa module cấp cao và module cấp thấp
+
 # Trong Product class, chúng ta sử dụng set_calculate_strategy() để thiết lập chiến lược tính giá.
 # Sau đó, chúng ta sử dụng calculate_price() để tính giá sản phẩm bằng cách sử dụng chiến lược tính giá được đặt trước đó.
 
-# Định nghĩa interface tính toán
 from abc import ABC, abstractmethod
 
 

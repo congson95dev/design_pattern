@@ -2,10 +2,10 @@
 # Adapter pattern là khi chúng ta tạo 1 class trung gian 
 # nhằm chuyển đổi một đoạn code không tương thích thành một đoạn code khác mà các đối tượng có thể sử dụng.
 
-# VD class Target có hàm request, nhưng class Adapter lại có hàm specific_request
-# ta muốn hàm Target sử dụng được hàm specific_request nhưng lại không muốn sửa trực tiếp code
-# thì ta có thể sử dụng 1 class trung gian được gọi là Adapter, class này kế thừa từ class Target
-# giờ hàm request sẽ có thể sử dụng đc hàm specific_request thông qua class Adapter
+# VD class ImageLibrary có hàm open_image, nhưng class ExternalImageLibrary lại có hàm change_size
+# ta muốn hàm open_image sử dụng được hàm change_size nhưng lại không muốn sửa trực tiếp code
+# thì ta có thể sử dụng 1 class trung gian được gọi là ImageAdapter, class này kế thừa từ class ImageLibrary
+# giờ hàm request sẽ có thể sử dụng đc hàm change_size thông qua class ImageAdapter
 
 
 class ImageLibrary:
